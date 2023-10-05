@@ -5,18 +5,18 @@
 // #4 ¹ø ¹®Á¦ 
 int main(int argc, char *argv[]) 
 {
-	int input;
-	int sec, min, hour;
+	int x, y, z, m;
+	int a, b, c;
+	x=2;
+	z=1;
+	a=3;
+	b=4;
+	c=5;
 	
-	printf("input second: ");
-	scanf("%d", &input);
+	y=(a*x*x)+(b*x)+c;
+	m=(x+y+z)/3;
 	
-	sec=input%60;
-	min=(input%3600)/60;
-	hour=input/3600;
-	
-	printf("The time is %d : %d : %d\n", hour, min, sec);
-	
-	
+	printf("y=%d, m=%d", y, m);
+
 	return 0;
 }

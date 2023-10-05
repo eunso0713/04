@@ -5,14 +5,19 @@
 // #4 ¹ø ¹®Á¦ 
 int main(int argc, char *argv[]) 
 {
-	int input, sec, min;
+	unsigned int x;
+	int b;
 	
-	printf("input the second: ");
-	scanf("%d", &input);
+	printf("input a number: ");
+	scanf("%ui", &x);
 	
-	min=(input%3600)/60;
-	
-	printf("The time is %d : %d\n", min, sec);
-	
+	for (b=0; x!=0; x>>=1)
+	{
+		if (x&1)
+		{
+			b++;
+		}
+	}
+	printf("The result is: %i\n", b);
 	return 0;
 }
